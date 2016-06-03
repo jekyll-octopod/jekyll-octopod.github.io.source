@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h3>
+    {{ site.title }}
+    {% if site.subtitle %}<br/><small>{{ site.subtitle }}</small>{% endif %}
+  </h3>
+</div>
+
+<p class="text-center">
+  <img width="200px" src="{{ site.url }}/img/logo-360x360.png" alt="{{ site.title }} logo">
+</p>
+
+{% if site.description %}<p>{{ site.description }}</p>{% endif %}
+
+<hr/>
+
+<h3> Documentation - Topics</h3>
+
+{{ site | documentation_list:page }}
