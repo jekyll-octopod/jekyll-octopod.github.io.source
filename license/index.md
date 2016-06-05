@@ -22,4 +22,4 @@ The following assets from separate projects are packaged in this repo:
 
 Congrats — you have read all there is to read!
 
-_Back to [Home](/)._
+_Continue with [Code of Conduct](/conduct)_ .
