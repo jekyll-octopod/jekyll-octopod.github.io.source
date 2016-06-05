@@ -44,7 +44,7 @@ file per episode.
 
 jekyll-octopod brings innately:
 
-* iTunes-ready episode feeds for different file formats (e.g. mp3, ogg, m4a)
+* iTunes-ready *paged* episode feeds for different file formats (e.g. mp3, ogg, m4a)
 * a ready to use [Bootflat](http://bootflat.github.io/) and  [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive (i.e. mobile friendly) layout modifiable to your heart's desire.
 * [Flattr](https://flattr.com/) support on the website and in the episode feed.
 * [Twitter](https://twitter.com) integration on the website.
