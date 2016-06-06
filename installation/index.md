@@ -34,7 +34,6 @@ The setup script copies all assets (for example the theme and templates) into yo
 Finally, generate the site and test drive it:
 
 {% highlight shell %}
-$ octopod build
 $ octopod serve
 {% endhighlight %}
 
