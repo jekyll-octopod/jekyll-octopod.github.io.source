@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'jekyll-octopod'
-gem 'rouge'
+group :jekyll_plugins do
+  gem 'jekyll-octopod'
+end

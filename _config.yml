@@ -1,7 +1,6 @@
 # You have to configure this ###################################################
 title: jekyll - octopod
 # You should configure this ####################################################
-url: http://localhost:4000
 url: https://jekyll-octopod.github.io
 subtitle: Static Site Podcast Publishing for Geeks
 description: Static Site Podcast Publishing for Geeks.
@@ -46,5 +45,4 @@ disqus_shortname: # Disqus will not be used unless this is set
 disqus_developer: 0 # 1 / 0
 ## Itunes link ###########################################################
 itunes_url: "https://itunes.apple.com/at/podcast/myname/id#myid#"
-markdown: kramdown
-highlighter: rouge
+theme: jekyll-bootflat
