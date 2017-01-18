@@ -1,5 +1,5 @@
 ---
-title: Prerequisites
+title: Contributions
 layout: default
 docs: 8
 permalink: contributions
@@ -18,5 +18,12 @@ But feel free to fork and push request and code and everything. If you want to c
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Contribution to the docs
+
+Docs are published in the repo [jekyll-octopod.github.io](https://github.com/jekyll-octopod/jekyll-octopod.github.io),
+but they are created from [jekyll-octopod.github.io.source](https://github.com/jekyll-octopod/jekyll-octopod.github.io.source).
+
+So to improve the docs, submit a pull request to the [pages](https://github.com/jekyll-octopod/jekyll-octopod.github.io.source/tree/master/pages), all the actual textual content is stored in there.
 
 _Continue reading with [Credits](/credits)._
