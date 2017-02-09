@@ -73,6 +73,6 @@ For ```octopod episode```, the following options are available to override defau
 -t, --title [TEXT]
 {% endhighlight %}
 
-All derived Jekyll command line tasks can be found in Jekyll's [Usage Documentation](http://jekyllrb.com/docs/usage/), from which the octopod command inherits most of its functionality)
+All derived Jekyll command line tasks can be found in Jekyll's [Usage Documentation](http://jekyllrb.com/docs/usage/), from which the octopod command inherits most of its functionality.
 
 _Continue reading with [Liquid filters](/liquid_filters)._
