@@ -2,7 +2,7 @@
 title: Liquid Filters
 layout: default
 docs: 6
-permalink: liquid_filters.md
+permalink: liquid_filters
 ---
 
 # Liquid Filters
