@@ -43,6 +43,36 @@ Configuration is read from '<source>/_config.yml' but can be overridden.
 Available options are documented in `_config.yml`.
 In case, you deleted some of the options, a full reference can be found in `_config.yml.sample`.
 
+For ```octopod episode```, the following options are available to override defaults:
+{% highlight shell %}
+-a, --author [AUTHOR]
+
+-c, --chapters [CHAPTER1, CHAPTER2...]
+# Chapters have the format "HH:MM:SS.sss Title"
+
+-d, --duration [DURATION]
+# "HH:MM:SS.sss"
+
+-e, --explicit [yes/no]
+
+--episode-cover [PATH]
+# Path to an episode-specific image
+
+-l, --layout [LAYOUT]
+# Defaults to 'post', should never need to be changed
+
+-p, --posts_dir [PATH]
+# Defaults to '_posts'
+
+-s, --subtitle [TEXT]
+
+--summary [TEXT]
+
+--tags [TAG1, TAG2, ...]
+
+-t, --title [TEXT]
+{% endhighlight %}
+
 All derived Jekyll command line tasks can be found in Jekyll's [Usage Documentation](http://jekyllrb.com/docs/usage/), from which the octopod command inherits most of its functionality)
 
 _Continue reading with [Liquid filters](/liquid_filters)._
