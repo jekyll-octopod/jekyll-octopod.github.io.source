@@ -49,7 +49,7 @@ At minimum a short text, the web player (embedded in an iframe) and some links a
 {% highlight YAML %}
 Getting started is hard.
 {% raw %}
-{{ page | web_player_moderator:site }}
+{{ podigee_player page }}
 {% endraw %}
 ## Show Notes und Links
 

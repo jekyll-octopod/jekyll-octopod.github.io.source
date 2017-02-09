@@ -54,14 +54,14 @@ chapters:
 ---
 ## {{ page.subtitle }}
 {% raw %}
-{{ page | web_player:site }}
+{{ podigee_player page }}
 {% endraw %}
 ## Shownotes and Links
 
 * Note
 {% endhighlight %}
 
-The part between the "---" and the "---" is the [YAML front matter](http://jekyllrb.com/docs/frontmatter/). This is where all the metadata is stored. Below the YAML frontmatter is the area (body) where you can write down your post's content (like the show notes and stuff). This strange looking `{{ page | web_player_moderator:site }}` thingy is the [Liquid filter](./liquid-filters), which represents the iframe where the web player will be included later.
+The part between the "---" and the "---" is the [YAML front matter](http://jekyllrb.com/docs/frontmatter/). This is where all the metadata is stored. Below the YAML frontmatter is the area (body) where you can write down your post's content (like the show notes and stuff). This strange looking `{{ podigee_player page }}` thingy is the [Liquid filter](./liquid-filters), which represents the iframe where the web player will be included later.
 
 When all this work is done you are ready to take a first look.  
 The following command generates your site and starts a local webserver for a preview. You can check your new podcasting website by opening [http://localhost:4000](http://localhost:4000).
