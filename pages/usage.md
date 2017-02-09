@@ -26,7 +26,7 @@ In addition, jekyll-octopod assumes that the different audio files of each of yo
 If they are not, you may confuse your listeners — at least when you are using the chapters feature.
 
 Next up, your episode needs some metadata. A title, some kind of a description, maybe chapters and so on. jekyll-octopod keeps all these metadata in one single text file (Protip: these dear little tots feel very lucky when they might live in a version control system!).  
-jekyll-octopod kindly helps you to generate these files with the `octopod episode` command. You will get more information on the [[The command line tool]] later.
+jekyll-octopod kindly helps you to generate these files with the `octopod episode` command. You will get more information on the [the command line tool](./command_line) later.
 
 The following command
 
@@ -73,10 +73,19 @@ The following command generates your site and starts a local webserver for a pre
 $ octopod --url "http://localhost:4000" --server
 {% endhighlight %}
 
-If everything is alright you can finally generate your "real" Site:
+Since `localhost:4000` is the default, a shorter command with the same result is:
 
 {% highlight shell %}
-$ octopod
+$ octopod s[erve]
+{% endhighlight %}
+
+If everything looks good, you can generate the site with the proper url from your configuration. 
+*Warning*: Don't upload the `_site` subdirectory after serving it locally, as all links will assume running on `localhost` and this will cause issues!
+
+To build your site use
+
+{% highlight shell %}
+$ octopod b[uild]
 {% endhighlight %}
 
 And deploy it to your server:
@@ -85,6 +94,7 @@ And deploy it to your server:
 $ octopod deploy
 {% endhighlight %}
 
-*Warning*: The Rsync settings in your `_config.yml` are mandatory for this last step. But it is no problem to upload the generated website from the `_site` subdirectory via FTP or something.
+*Warning*: The Rsync settings in your `_config.yml` are mandatory for this last step. 
+If you don't wish to use rsync, uploading the website from the `_site` subdirectory via FTP or whichever tool you prefer works just fine.
 
 _Continue with [The command line tool](/command_line)_.
