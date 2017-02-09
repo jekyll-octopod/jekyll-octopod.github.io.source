@@ -69,7 +69,7 @@ Hopefully you are brave enough to play with this cute little toy anyway.
 
 ## Documentation
 
-Detailed documentation is provided on the folloging pages:
+Detailed documentation is provided on the following pages:
 
 {{ site | documentation_list:page }}
 
