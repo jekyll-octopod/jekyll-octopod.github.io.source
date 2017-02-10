@@ -54,7 +54,7 @@ chapters:
 ---
 ## {{ page.subtitle }}
 {% raw %}
-{{ page | web_player:site }}
+{{ podigee_player page }}
 {% endraw %}
 ## Shownotes and Links
 
@@ -63,7 +63,7 @@ chapters:
 
 The part between the "---" and the "---" is the [YAML front matter](http://jekyllrb.com/docs/frontmatter/). 
 This is where all the metadata is stored. Below the YAML frontmatter is the area (body) where you can write down your post's content (like the show notes and stuff). 
-This strange looking {% raw %}`{{ page | web_player_moderator:site }}`{% endraw %} thingy is the [Liquid filter](./liquid-filters), 
+This strange looking {% raw %}`{{ podigee_player page }}`{% endraw %} thingy is the [Liquid filter](./liquid-filters), 
 which represents the iframe where the web player will be included later.
 
 When all this work is done you are ready to take a first look.  

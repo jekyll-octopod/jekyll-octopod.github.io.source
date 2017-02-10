@@ -8,6 +8,7 @@ author: Stefan Haslinger
 email: stefan.haslinger@informatom.com
 keywords: [octopod, podcast, magic]
 itunes_categories: [Technology]
+episodes_per_feed_page: 100
 # additional_feeds:
 #   itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
 #   torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
