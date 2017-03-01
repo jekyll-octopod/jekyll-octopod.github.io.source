@@ -20,7 +20,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-bootflat (0.2.4)
       jekyll (~> 3.3)
-    jekyll-octopod (0.8.6)
+    jekyll-octopod (0.8.7)
       facets (~> 3.1)
       jekyll (~> 3.3, >= 3.3.1)
       jekyll-bootflat (~> 0.2.4)
@@ -51,4 +51,4 @@ DEPENDENCIES
   jekyll-octopod
 
 BUNDLED WITH
-   1.14.3
+   1.14.5

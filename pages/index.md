@@ -62,6 +62,7 @@ jekyll-octopod brings innately:
 * https compatibility.
 * Google search integration.
 * Easy show notes creation.
+* Including scientific formulas using [Mathjax](https://www.mathjax.org/)
 
 **Is this production ready?**
 
