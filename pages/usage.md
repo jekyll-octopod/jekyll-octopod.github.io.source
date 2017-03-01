@@ -40,10 +40,12 @@ will generate you a template called **YYYY-MM-DD-why-i-_3-octopod.md** (YYYY-MM-
 ---
 title: Why I <3 Octopod
 subtitle: A Subtle Subtitle
-date: May 22nd, 2016
+episode-cover: "/img/episode-cover0.jpg' # This can be used to provide episode-specific images
+datum: March 22nd 2016 # this is no longer necessary, but in de or en installations, it is still respected
 layout: post
 author: Uncle Octopod
 explicit: 'no'
+duration: "0:03:13"
 audio:
   m4a: name.m4a
   mp3: name.mp3
@@ -51,6 +53,7 @@ audio:
 chapters:
 - '00:00:00.000 Intro.'
 - '00:00:30.000 Outro.'
+posts-dir: "/path/to/post/dir" # default: '_posts'
 ---
 ## {{ page.subtitle }}
 {% raw %}

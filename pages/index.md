@@ -49,11 +49,12 @@ jekyll-octopod brings innately:
 * a ready to use [Bootflat](http://bootflat.github.io/) and  [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive (i.e. mobile friendly) layout modifiable to your heart's desire.
 * [Flattr](https://flattr.com/) support on the website and in the episode feed.
 * [Twitter](https://twitter.com) integration on the website.
-* comments via [Disqus](http://disqus.com/).
-* [Podlove Web Player](http://podlove.org/podlove-web-player/) in it's current version 3.0.
-* Static player pages that are embeddable in iframes for your other or affiliates' sites.
-* [Podlove Alternate Feeds](http://podlove.org/alternate-feeds/).
-* [Podlove Simple Chapters](http://podlove.org/simple-chapters/).
+* comments via [Disqus](https://disqus.com/) or
+* comments via [Isso](https://posativ.org/isso/).
+* [Podigee Web Player](https://www.podigee.com/en/podcast-player).
+    * Easy chaptermarks
+    * Fast-forward & rewind 30s
+    * Multiple playback speeds: 0.5x, 1.5x, 2x
 * [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy podcast subscription on any operating system, including mobile phones.
 * https compatibility.
 * Google search integration.
@@ -62,7 +63,7 @@ jekyll-octopod brings innately:
 **Is this production ready?**
 
 We use it in production, so we believe it is.
-But it is very likely, that it still contains bugs. And there is no guarantee that behavior will not change with the next update :-).
+But it is very likely that it still contains bugs. And there is no guarantee that behavior will not change with the next update :-).
 
 Hopefully you are brave enough to play with this cute little toy anyway.
 

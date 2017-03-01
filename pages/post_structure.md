@@ -7,7 +7,7 @@ permalink: post_structure
 
 # Post structure
 
-The post template can be found in `/includes/post.html`. It renders the posts from the `/_post` directory.
+The post template can be found in `/_includes/post.html`. It renders the posts from the `/_post` directory.
 Each post has to have a certain structure which consists of the YAML front matter and of the body part.
 
 ## The YAML front matter
@@ -20,8 +20,8 @@ The attributes that can be set here are best described with the following exampl
 title: Episode 0
 subtitle: Getting Started Is Never Easy
 summary: Otherwise the summary is the first paragraph of the show notes
-episode-cover: "/img/episode-cover0.jpg'
-datum: March 22nd 2016
+episode-cover: "/img/episode-cover0.jpg' # This can be used to provide episode-specific images
+datum: March 22nd 2016 # this is no longer necessary, but in de or en installations, it is still respected
 layout: post
 author: Arne and Stefan
 explicit: 'no'
