@@ -46,7 +46,9 @@ file per episode.
 jekyll-octopod brings innately:
 
 * iTunes-ready *paged* episode feeds for different file formats (e.g. mp3, ogg, m4a)
-* a ready to use [Bootflat](http://bootflat.github.io/) and  [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive (i.e. mobile friendly) layout modifiable to your heart's desire.
+* a ready to use [Bootflat](http://bootflat.github.io/) and  
+  [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive 
+  (i.e. mobile friendly) layout modifiable to your heart's desire.
 * [Flattr](https://flattr.com/) support on the website and in the episode feed.
 * [Twitter](https://twitter.com) integration on the website.
 * comments via [Disqus](https://disqus.com/) or
@@ -55,7 +57,8 @@ jekyll-octopod brings innately:
     * Easy chaptermarks
     * Fast-forward & rewind 30s
     * Multiple playback speeds: 0.5x, 1.5x, 2x
-* [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy podcast subscription on any operating system, including mobile phones.
+* [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy 
+  podcast subscription on any operating system, including mobile phones.
 * https compatibility.
 * Google search integration.
 * Easy show notes creation.
@@ -63,7 +66,8 @@ jekyll-octopod brings innately:
 **Is this production ready?**
 
 We use it in production, so we believe it is.
-But it is very likely that it still contains bugs. And there is no guarantee that behavior will not change with the next update :-).
+But it is very likely that it still contains bugs. And there is no guarantee that 
+behavior will not change with the next update :-).
 
 Hopefully you are brave enough to play with this cute little toy anyway.
 

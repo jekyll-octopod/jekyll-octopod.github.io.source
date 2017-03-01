@@ -12,7 +12,9 @@ You should see the fully functional podcasting site like
 
 <img src="/img/demo.png" width="600" alt="screenshot" />
 
-Episode 0 is a demo episode. You can even listen to the nice tune
-[Jazz Comedy](http://www.bensound.com/royalty-free-music/track/jazz-comedy) from Bensound using the web player.
+Episode 0 is a demo episode with a little bit of audio. You can 
+listen to the nice tune
+[Jazz Comedy](http://www.bensound.com/royalty-free-music/track/jazz-comedy) 
+from Bensound using the web player.
 
 _Continue with [Usage](/usage)_.

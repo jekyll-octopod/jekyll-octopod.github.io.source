@@ -112,7 +112,10 @@ Returns a slug based on the id of a given page.
 {% endhighlight %}
 
 ### Split chapter
-Splits a chapter, like it is written to the post YAML front matter, into the components 'start' — which refers to a single point in time relative to the beginning of the media file — and 'title' — which defines the text to be the title of the chapter.
+Splits a chapter, like it is written to the post YAML front matter, into the 
+components 'start' — which refers to a single point in time relative to the 
+beginning of the media file — and 'title' — which defines the text to be 
+the title of the chapter.
 
 {% highlight YAML %}
 {% raw %}
@@ -124,7 +127,8 @@ Splits a chapter, like it is written to the post YAML front matter, into the com
 {% endhighlight %}
 
 ### Audio tag
-Returns an `<audio>` tag for a given page with `<source>` tags in it for every audio file in the page's YAML front matter.
+Returns an `<audio>` tag for a given page with `<source>` tags in it for every 
+audio file in the page's YAML front matter.
 
 {% highlight YAML %}
 {% raw %}
@@ -132,30 +136,12 @@ Returns an `<audio>` tag for a given page with `<source>` tags in it for every a
 {% endraw %}
 {% endhighlight %}
 
-### Web player moderator
-Returns the web player iframe for the episode of a given page.
-
-{% highlight YAML %}
-{% raw %}
-{{ page | web_player_moderator:site }}
-{% endraw %}
-{% endhighlight %}
-
 ### Web player
-Returns the web player for the episode of a given page, to be used in the file created for the iframe mentioned above.
+Returns the web player for the episode of a given page.
 
 {% highlight YAML %}
 {% raw %}
-{{ page | web_player:site }}
-{% endraw %}
-{% endhighlight %}
-
-### Web player script tag
-Returns the script tag initializing the web player for the episode of a given page, to be used in the file created for the iframe mentioned above.
-
-{% highlight YAML %}
-{% raw %}
-{{ page | web_player_script_tag:site }}
+{{ page | podigee_player:site }}
 {% endraw %}
 {% endhighlight %}
 
@@ -187,7 +173,9 @@ Returns the host of a given url
 {% endhighlight %}
 
 ### Disqus configuration
-Generates the config for disqus integration. If a page object is given, it generates the config variables only for this page. Otherwise, it only generates the global config variables.
+Generates the config for disqus integration. If a page object is given, it 
+generates the config variables only for this page. Otherwise, it only 
+generates the global config variables.
 
 {% highlight YAML %}
 {% raw %}
@@ -197,7 +185,8 @@ Generates the config for disqus integration. If a page object is given, it gener
 {% endhighlight %}
 
 ### SHA1
-Returns the hex-encoded hash value of a given string. The optional second argument defines the length of the returned string.
+Returns the hex-encoded hash value of a given string. The optional 
+second argument defines the length of the returned string.
 
 {% highlight YAML %}
 {% raw %}
@@ -207,7 +196,8 @@ Returns the hex-encoded hash value of a given string. The optional second argume
 {% endhighlight %}
 
 ### Navigation list
-Returns a ready-to-use navigation list of all pages that have `navigation` set in their YAML front matter. The list is sorted by the value of `navigation`.
+Returns a ready-to-use navigation list of all pages that have `navigation` set 
+in their YAML front matter. The list is sorted by the value of `navigation`.
 
 {% highlight YAML %}
 {% raw %}
@@ -216,7 +206,11 @@ Returns a ready-to-use navigation list of all pages that have `navigation` set i
 {% endhighlight %}
 
 ### Episode feeds
-Returns an array of all episode feeds named by the convention `episodes.<episode_file_format>.rss` within the root directory. Also it contains all additional feeds specified by `additional_feeds` in the `_config.yml`. If an `episode_file_format` or key of `additional_feeds` equals the optional parameter, it will be skipped.
+Returns an array of all episode feeds named by the convention 
+`episodes.<episode_file_format>.rss` within the root directory. Also it 
+contains all additional feeds specified by `additional_feeds` in the `_config.yml`. 
+If an `episode_file_format` or key of `additional_feeds` equals the optional 
+parameter, it will be skipped.
 
 {% highlight YAML %}
 {% raw %}
@@ -226,7 +220,11 @@ Returns an array of all episode feeds named by the convention `episodes.<episode
 {% endhighlight %}
 
 ### Episode feeds HTML
-Returns HTML links to all episode feeds named by the convention `episodes.<episode_file_format>.rss` within the root directory. Also it returns all additional feeds specified by `additional_feeds` in the `_config.yml`. If an `episode_file_format` or key of `additional_feeds` equals the optional parameter, it will be skipped.
+Returns HTML links to all episode feeds named by the convention 
+`episodes.<episode_file_format>.rss` within the root directory. Also it returns 
+all additional feeds specified by `additional_feeds` in the `_config.yml`. If 
+an `episode_file_format` or key of `additional_feeds` equals the optional 
+parameter, it will be skipped.
 
 {% highlight YAML %}
 {% raw %}
@@ -241,7 +239,11 @@ Returns HTML links to all episode feeds named by the convention `episodes.<episo
 {% endhighlight %}
 
 ### Episode feeds RSS
-Returns RSS-XML links to all episode feeds named by the convention `episodes.<episode_file_format>.rss` within the root directory. Also it returns all additional feeds specified by `additional_feeds` in the `_config.yml`. If an `episode_file_format` or key of `additional_feeds` equals the optional parameter, it will be skipped.
+Returns RSS-XML links to all episode feeds named by the convention 
+`episodes.<episode_file_format>.rss` within the root directory. Also it returns 
+all additional feeds specified by `additional_feeds` in the `_config.yml`. If an 
+`episode_file_format` or key of `additional_feeds` equals the optional 
+parameter, it will be skipped.
 
 {% highlight YAML %}
 {% raw %}
