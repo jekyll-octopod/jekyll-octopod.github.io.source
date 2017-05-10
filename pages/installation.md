@@ -7,10 +7,10 @@ permalink: installation
 
 # Installation
 
-First, install jekyll, create a new application and cd into it:
+First, install Bundler and Jekyll, create a new application and cd into it:
 
 {% highlight shell %}
-$ gem install jekyll
+$ gem install bundler jekyll
 $ jekyll new name-of-my-podcast
 $ cd name-of-my-podcast
 {% endhighlight %}
