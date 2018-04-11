@@ -47,4 +47,4 @@ disqus_developer: 0 # 1 / 0
 ## Itunes link ###########################################################
 itunes_url: "https://itunes.apple.com/at/podcast/myname/id#myid#"
 theme: jekyll-bootflat
-gems: [jekyll-admin]
+plugins: [jekyll-admin]
