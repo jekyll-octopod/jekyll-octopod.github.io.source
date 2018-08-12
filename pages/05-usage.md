@@ -1,7 +1,7 @@
 ---
 title: Usage
 layout: default
-docs: 4
+docs: 5
 permalink: usage
 ---
 
@@ -22,10 +22,10 @@ First of all, your new podcast episode needs audio data. Octopod assumes that yo
 $ cp ~/my_superduper_audio_files/ocp001.m4a episodes
 {% endhighlight %}
 
-In addition, jekyll-octopod assumes that the different audio files of each of your episodes are the same content in various formats — with the same duration and everything.  
+In addition, jekyll-octopod assumes that the different audio files of each of your episodes are the same content in various formats — with the same duration and everything.
 If they are not, you may confuse your listeners — at least when you are using the chapters feature.
 
-Next up, your episode needs some metadata. A title, some kind of a description, maybe chapters and so on. jekyll-octopod keeps all these metadata in one single text file (Protip: these dear little tots feel very lucky when they might live in a version control system!).  
+Next up, your episode needs some metadata. A title, some kind of a description, maybe chapters and so on. jekyll-octopod keeps all these metadata in one single text file (Protip: these dear little tots feel very lucky when they might live in a version control system!).
 jekyll-octopod kindly helps you to generate these files with the `octopod episode` command. You will get more information on the [the command line tool](./command_line) later.
 
 The following command
@@ -64,12 +64,12 @@ posts-dir: "/path/to/post/dir" # default: '_posts'
 * Note
 {% endhighlight %}
 
-The part between the "---" and the "---" is the [YAML front matter](http://jekyllrb.com/docs/frontmatter/). 
-This is where all the metadata is stored. Below the YAML frontmatter is the area (body) where you can write down your post's content (like the show notes and stuff). 
-This strange looking {% raw %}`{{ podigee_player page }}`{% endraw %} thingy is the [Liquid filter](./liquid-filters), 
+The part between the "---" and the "---" is the [YAML front matter](http://jekyllrb.com/docs/frontmatter/).
+This is where all the metadata is stored. Below the YAML frontmatter is the area (body) where you can write down your post's content (like the show notes and stuff).
+This strange looking {% raw %}`{{ podigee_player page }}`{% endraw %} thingy is the [Liquid filter](./liquid-filters),
 which represents the iframe where the web player will be included later.
 
-When all this work is done you are ready to take a first look.  
+When all this work is done you are ready to take a first look.
 The following command generates your site and starts a local webserver for a preview. You can check your new podcasting website by opening [http://localhost:4000](http://localhost:4000).
 
 {% highlight shell %}
@@ -82,7 +82,7 @@ Since `localhost:4000` is the default, a shorter command with the same result is
 $ octopod s[erve]
 {% endhighlight %}
 
-If everything looks good, you can generate the site with the proper url from your configuration. 
+If everything looks good, you can generate the site with the proper url from your configuration.
 *Warning*: Don't upload the `_site` subdirectory after serving it locally, as all links will assume running on `localhost` and this will cause issues!
 
 To build your site use
@@ -97,7 +97,7 @@ And deploy it to your server:
 $ octopod deploy
 {% endhighlight %}
 
-*Warning*: The Rsync settings in your `_config.yml` are mandatory for this last step. 
+*Warning*: The Rsync settings in your `_config.yml` are mandatory for this last step.
 If you don't wish to use rsync, uploading the website from the `_site` subdirectory via FTP or whichever tool you prefer works just fine.
 
 _Continue with [The command line tool](/command_line)_.

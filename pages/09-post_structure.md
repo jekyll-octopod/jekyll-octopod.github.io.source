@@ -1,7 +1,7 @@
 ---
 title: Post structure
 layout: default
-docs: 7
+docs: 9
 permalink: post_structure
 ---
 
@@ -12,7 +12,7 @@ Each post has to have a certain structure which consists of the YAML front matte
 
 ## The YAML front matter
 
-jekyll-octopod's YAML front matter is an extension of [Jekyll's YAML front matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).  
+jekyll-octopod's YAML front matter is an extension of [Jekyll's YAML front matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).
 
 The attributes that can be set here are best described with the following example; they are quite self-explanatory:
 

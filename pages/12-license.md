@@ -1,7 +1,7 @@
 ---
 title: License
 layout: default
-docs: 10
+docs: 12
 permalink: license
 ---
 

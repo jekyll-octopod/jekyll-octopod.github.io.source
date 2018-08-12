@@ -1,7 +1,7 @@
 ---
 title: Liquid Filters
 layout: default
-docs: 6
+docs: 8
 permalink: liquid_filters
 ---
 
@@ -112,9 +112,9 @@ Returns a slug based on the id of a given page.
 {% endhighlight %}
 
 ### Split chapter
-Splits a chapter, like it is written to the post YAML front matter, into the 
-components 'start' — which refers to a single point in time relative to the 
-beginning of the media file — and 'title' — which defines the text to be 
+Splits a chapter, like it is written to the post YAML front matter, into the
+components 'start' — which refers to a single point in time relative to the
+beginning of the media file — and 'title' — which defines the text to be
 the title of the chapter.
 
 {% highlight YAML %}
@@ -127,7 +127,7 @@ the title of the chapter.
 {% endhighlight %}
 
 ### Audio tag
-Returns an `<audio>` tag for a given page with `<source>` tags in it for every 
+Returns an `<audio>` tag for a given page with `<source>` tags in it for every
 audio file in the page's YAML front matter.
 
 {% highlight YAML %}
@@ -173,8 +173,8 @@ Returns the host of a given url
 {% endhighlight %}
 
 ### Disqus configuration
-Generates the config for disqus integration. If a page object is given, it 
-generates the config variables only for this page. Otherwise, it only 
+Generates the config for disqus integration. If a page object is given, it
+generates the config variables only for this page. Otherwise, it only
 generates the global config variables.
 
 {% highlight YAML %}
@@ -185,7 +185,7 @@ generates the global config variables.
 {% endhighlight %}
 
 ### SHA1
-Returns the hex-encoded hash value of a given string. The optional 
+Returns the hex-encoded hash value of a given string. The optional
 second argument defines the length of the returned string.
 
 {% highlight YAML %}
@@ -196,7 +196,7 @@ second argument defines the length of the returned string.
 {% endhighlight %}
 
 ### Navigation list
-Returns a ready-to-use navigation list of all pages that have `navigation` set 
+Returns a ready-to-use navigation list of all pages that have `navigation` set
 in their YAML front matter. The list is sorted by the value of `navigation`.
 
 {% highlight YAML %}
@@ -206,10 +206,10 @@ in their YAML front matter. The list is sorted by the value of `navigation`.
 {% endhighlight %}
 
 ### Episode feeds
-Returns an array of all episode feeds named by the convention 
-`episodes.<episode_file_format>.rss` within the root directory. Also it 
-contains all additional feeds specified by `additional_feeds` in the `_config.yml`. 
-If an `episode_file_format` or key of `additional_feeds` equals the optional 
+Returns an array of all episode feeds named by the convention
+`episodes.<episode_file_format>.rss` within the root directory. Also it
+contains all additional feeds specified by `additional_feeds` in the `_config.yml`.
+If an `episode_file_format` or key of `additional_feeds` equals the optional
 parameter, it will be skipped.
 
 {% highlight YAML %}
@@ -220,10 +220,10 @@ parameter, it will be skipped.
 {% endhighlight %}
 
 ### Episode feeds HTML
-Returns HTML links to all episode feeds named by the convention 
-`episodes.<episode_file_format>.rss` within the root directory. Also it returns 
-all additional feeds specified by `additional_feeds` in the `_config.yml`. If 
-an `episode_file_format` or key of `additional_feeds` equals the optional 
+Returns HTML links to all episode feeds named by the convention
+`episodes.<episode_file_format>.rss` within the root directory. Also it returns
+all additional feeds specified by `additional_feeds` in the `_config.yml`. If
+an `episode_file_format` or key of `additional_feeds` equals the optional
 parameter, it will be skipped.
 
 {% highlight YAML %}
@@ -239,10 +239,10 @@ parameter, it will be skipped.
 {% endhighlight %}
 
 ### Episode feeds RSS
-Returns RSS-XML links to all episode feeds named by the convention 
-`episodes.<episode_file_format>.rss` within the root directory. Also it returns 
-all additional feeds specified by `additional_feeds` in the `_config.yml`. If an 
-`episode_file_format` or key of `additional_feeds` equals the optional 
+Returns RSS-XML links to all episode feeds named by the convention
+`episodes.<episode_file_format>.rss` within the root directory. Also it returns
+all additional feeds specified by `additional_feeds` in the `_config.yml`. If an
+`episode_file_format` or key of `additional_feeds` equals the optional
 parameter, it will be skipped.
 
 {% highlight YAML %}

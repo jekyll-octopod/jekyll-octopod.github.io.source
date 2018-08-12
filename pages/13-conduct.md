@@ -1,7 +1,7 @@
 ---
 title: Code of Conduct
 layout: default
-docs: 11
+docs: 13
 permalink: conduct
 ---
 
