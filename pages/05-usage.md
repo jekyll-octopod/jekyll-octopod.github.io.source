@@ -120,9 +120,16 @@ We have also included Jekyll Admin, so you can create new posts and update exist
 web interface at [http://localhost:4000/admin](http://localhost:4000/admin)
 You could even change the config in the web interface.
 
+To enable Jekyll admin uncomment the lines
+```
+# plugins:
+#   - jekyll-admin
+```
+in your project's `_config.yml` file.
+
 See the [documentation of Jekyll Admin](https://jekyll.github.io/jekyll-admin/) for details.
 Unfortunately Jekyll Admin kills Jekyll's auto regeneration feature. So if you prefer auto regeneration
 over the web based admin, disable the gem all together by removing it from the `plugin` array in
-the `_config.yml` file. You can then also remove it from the `Gemfile`, if you prefer.
+the `_config.yml` file or commenting it in `_config.yml`.
 
 _Continue with [The command line tool](/command_line)_.

@@ -79,6 +79,10 @@ use_isso: "no" # "no" | "yes"
 gems: [jekyll-octopod]
 theme: jekyll-bootflat
 
+### Jekyll Admin: uncomment the last two lines of this paragraph to enable Jekyll Admin.
+### (but you will loose auto regeneration after code changes with a text editor then)
+# plugins:
+#  - jekyll-admin
 ```
 
 _Continue with [Usage](/usage)_.
