@@ -68,7 +68,6 @@ flattr_popout:  1 # 1 | 0 (show popout when hovering mouse over button)
 flattr_language: en_GB # available languages see https://api.flattr.com/rest/v2/languages.txt
 flattr_category: audio # available categories see https://api.flattr.com/rest/v2/categories.txt
 
-
 ## Disqus comments
 disqus_shortname: # Disqus will not be used unless this is set
 disqus_developer: 0 # 1 | 0
