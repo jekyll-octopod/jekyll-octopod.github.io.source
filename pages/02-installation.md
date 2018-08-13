@@ -15,18 +15,15 @@ $ jekyll new name-of-my-podcast
 $ cd name-of-my-podcast
 {% endhighlight %}
 
-If it doesn't exist, create a file `Gemfile` with the contents:
+Create a file `Gemfile` or modify it, so that it contains:
 
 {% highlight ruby %}
-source 'http://rubygems.org'
-gem 'jekyll-octopod'
+source "https://rubygems.org"
+
+gem "jekyll", "~> 3.8.3"
+gem "jekyll-octopod"
 {% endhighlight %}
 
-If it already exists, add the line
-{% highlight ruby %}
-gem 'jekyll-octopod'
-{% endhighlight %}
-at the end of.
 
 This way, we tell Jekyll that we want to use Jekyll-Octopod.
 Now we install the Jekyll-Octopod and its dependencies and run the setup script via:

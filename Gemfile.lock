@@ -38,7 +38,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
-    jekyll-octopod (0.9.7)
+    jekyll-octopod (0.9.8)
       facets (~> 3.1)
       jekyll (~> 3.3, >= 3.3.1)
       jekyll-admin (~> 0.4.0)
@@ -94,7 +94,7 @@ DEPENDENCIES
   jekyll (= 3.7.3)
   jekyll-bootflat
   jekyll-feed (~> 0.6)
-  jekyll-octopod (= 0.9.7)
+  jekyll-octopod (= 0.9.8)
 
 RUBY VERSION
    ruby 2.5.0p0
