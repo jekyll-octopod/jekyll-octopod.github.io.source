@@ -20,12 +20,14 @@ The attributes that can be set here are best described with the following exampl
 title: Episode 0
 subtitle: Getting Started Is Never Easy
 summary: Otherwise the summary is the first paragraph of the show notes
-episode-cover: "/img/episode-cover0.jpg' # This can be used to provide episode-specific images
-datum: March 22nd 2016 # this is no longer necessary, but in de or en installations, it is still respected
+### episode_cover: This can be used to provide episode-specific images, optional
+episode-cover: "/img/episode-cover0.jpg"
+# datum: this is no longer necessary, but in de or en installations, it is still respected
+datum: March 22nd 2016
 layout: post
 author: Arne and Stefan
 explicit: 'no'
-duration: "0:03:13"
+duration: '0:03:13' # 'hh:mm:ss'
 audio:
   mp3: episode0.mp3
   ogg: episode0.ogg
@@ -35,17 +37,20 @@ chapters:
   - '00:00:30.000 ... Shoubidoubidoo ...'
   - '00:02:45.000 Outro.'
 tags:
-  - "a tag"
-  - "another tag"
+  - 'a tag'
+  - 'another tag'
 contributors:
-  - name: "John Doe"
-    uri: "http://doe.com/john"
-    email: "john@doe.com"
-  - name: "Jane Doe"
-    uri: "http://doe.com/jane"
-    email: "jane@doe.com"
+  - name: 'John Doe'
+    uri: 'http://doe.com/john'
+    email: 'john@doe.com'
+  - name: 'Jane Doe'
+    uri: 'http://doe.com/jane'
+    email: 'jane@doe.com'
+
+### image: only filename to be provided here, image should be put in /img directory; optional
 image: episode17.png
 image_title: 17/Mobile Deleopment
+
 posts-dir: "/path/to/post/dir" # default: '_posts'
 {% endhighlight %}
 

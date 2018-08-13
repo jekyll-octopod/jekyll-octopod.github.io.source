@@ -49,6 +49,7 @@ jekyll-octopod brings innately:
   * contributors on episode level
   * image on episode level
   * enclosures have proper guids created
+  * generator string identifies jekyll-octopod as feed generator
 * a ready to use [Bootflat](http://bootflat.github.io/) and
   [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
