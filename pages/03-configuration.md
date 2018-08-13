@@ -13,62 +13,72 @@ several settings can be specified in the configuration file ```_config.yml``` in
 title: Octopod
 url: http://localhost:4000
 
-# needed, if and only if audio files are hosted in a different location
-download_url: http://my.cdn.com/path/to/episodes/
-
+### download_url: is needed, if and only if audio files are hosted in a different location, it is the path of the directory where the audio files are stored
+download_url: "http://your.fancy.hosting/episodes"
 subtitle: Static Site Podcast Publishing for Geeks
 description: My super duper cool podcast.
 author: Uncle Octopod
+
+### author_url: This is the URL of a site owned by the author (see https://jsonfeed.org/version/1)
+author_url: "http://your.fancy.hosting/"
+
 email: octopod@example.com
 keywords: [octopod, podcast, magic]
 itunes_categories: [Technology]
 episodes_per_feed_page: 100
 
-player_theme:  default  #  default  /  "default-dark" / legacy / minimal / republica
+player_theme: default # default | "default-dark" | legacy | minimal | republica
 
-## Rsync Deploy config #########################################################
-### Be sure your public key is listed in your server's ~/.ssh/authorized_keys file.
+### Date can be localized via date_de.rb plugin, you don't need to change this
+date_format: ordinal
+
+### Rsync Deploy config: Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_host: user@host.org
 ssh_port: 22
 document_root: /path/to/your/htdocs/
 rsync_delete: true
 
-twitter_nick: my_twitter_handle
-language: en
-explicit: no  # yes / no / clean
+### Twiter config, optional
+twitter_nick: my_twitter_handle # Twitter will not be used unless this is set
 
+language: en
+explicit: "no" # "yes" | no | clean
+
+### License Config, you really should configure this
 license: CC BY 4.0
 license_url: https://creativecommons.org/licenses/by/4.0/
 license_image_url: https://i.creativecommons.org/l/by/4.0/88x31.png
 
-## Flattr ######################################################################
+### Feed links, optional
+itunes_url: https://itunes.apple.com/at/podcast/myname/id232323
+# bitlove_url: https://bitlove.org/myaccount
+# fyyd_url: https://fyyd.de/podcast/myaccount/myid
+# gpodder_url: https://gpodder.net/podcast/mypodcast
+
+### Additional Feeds, optional
+#  itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
+#  torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
+#  torrent_mp3: http://bitlove.org/example_user/example_podcast_mp3/feed
+
+### Flattr config, optional
 flattr_uid: # Flattr will not be used unless this is set
 flattr_button: compact # compact | default
-flattr_mode: auto # auto | manual(default)
+flattr_mode: auto # auto | manual
 flattr_popout:  1 # 1 | 0 (show popout when hovering mouse over button)
-flattr_language: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
-flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
+flattr_language: en_GB # available languages see https://api.flattr.com/rest/v2/languages.txt
+flattr_category: audio # available categories see https://api.flattr.com/rest/v2/categories.txt
 
-## Disqus comments #############################################################
-disqus_shortname: my_disqus_shortname # Disqus will not be used unless this is set
-disqus_developer: 0 # 1 / 0
 
-## Isso comments #########################################################
-use_isso: no # set to 'yes' to include isso comments form
+## Disqus comments
+disqus_shortname: # Disqus will not be used unless this is set
+disqus_developer: 0 # 1 | 0
 
-## Feed links ###########################################################
-itunes_url: https://itunes.apple.com/at/podcast/myname/id#myid#
-bitlove_url: https://bitlove.org/myaccount
-fyyd_url: https://fyyd.de/podcast/myaccount/myid
-gpodder_url: https://gpodder.net/podcast/mypodcast
-
-additional_feeds:
-  itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
-  torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
-  torrent_mp3: http://bitlove.org/example_user/example_podcast_mp3/feed
+### Isso comments
+use_isso: "no" # "no" | "yes"
 
 gems: [jekyll-octopod]
 theme: jekyll-bootflat
+
 ```
 
 _Continue with [Usage](/usage)_.
