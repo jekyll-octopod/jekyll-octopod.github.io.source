@@ -20,10 +20,10 @@ The attributes that can be set here are best described with the following exampl
 title: Episode 0
 subtitle: Getting Started Is Never Easy
 summary: Otherwise the summary is the first paragraph of the show notes
-### episode_cover: This can be used to provide episode-specific images, optional
-episode-cover: "/img/episode-cover0.jpg"
-# datum: this is no longer necessary, but in de or en installations, it is still respected
+
+### datum: this is no longer necessary, but in de or en installations, it is still respected
 datum: March 22nd 2016
+
 layout: post
 author: Arne and Stefan
 explicit: 'no'
@@ -49,9 +49,7 @@ contributors:
 
 ### image: only filename to be provided here, image should be put in /img directory; optional
 image: episode17.png
-image_title: 17/Mobile Deleopment
-
-posts-dir: "/path/to/post/dir" # default: '_posts'
+image_title: My Image Title for Episode 17
 {% endhighlight %}
 
 ## The body
