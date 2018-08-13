@@ -46,6 +46,9 @@ file per episode.
 jekyll-octopod brings innately:
 
 * iTunes-ready *paged* episode feeds for different file formats (e.g. mp3, ogg, m4a)
+  * contributors on episode level
+  * image on episode level
+  * enclosures have proper guids created
 * a ready to use [Bootflat](http://bootflat.github.io/) and
   [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
@@ -59,9 +62,9 @@ jekyll-octopod brings innately:
     * Multiple playback speeds: 0.5x, 1.5x, 2x
 * [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy
   podcast subscription on any operating system, including mobile phones.
-* https compatibility.
-* Google search integration.
-* Easy show notes creation.
+* https compatibility
+* Google search integration
+* Easy show notes creation
 * Admin interface provided by [Jekyll Admin](https://jekyll.github.io/jekyll-admin/)
 
 **Is this production ready?**

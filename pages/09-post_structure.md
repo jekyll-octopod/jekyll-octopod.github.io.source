@@ -37,6 +37,15 @@ chapters:
 tags:
   - "a tag"
   - "another tag"
+contributors:
+  - name: "John Doe"
+    uri: "http://doe.com/john"
+    email: "john@doe.com"
+  - name: "Jane Doe"
+    uri: "http://doe.com/jane"
+    email: "jane@doe.com"
+image: episode17.png
+image_title: 17/Mobile Deleopment
 posts-dir: "/path/to/post/dir" # default: '_posts'
 {% endhighlight %}
 
