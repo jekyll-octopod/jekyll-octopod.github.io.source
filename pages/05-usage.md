@@ -49,7 +49,7 @@ will generate you a template called **YYYY-MM-DD-why-i-_3-octopod.md** (YYYY-MM-
 ---
 title: Why I <3 Octopod
 subtitle: A Subtle Subtitle
-episode-cover: "/img/episode-cover0.jpg' # This can be used to provide episode-specific images
+episode-cover: "/img/episode-cover0.jpg" # This can be used to provide episode-specific images
 datum: March 22nd 2016 # this is no longer necessary, but in de or en installations, it is still respected
 layout: post
 author: Uncle Octopod
