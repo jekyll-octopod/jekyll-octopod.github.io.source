@@ -257,4 +257,17 @@ parameter, it will be skipped.
 {% endraw %}
 {% endhighlight %}
 
+## Font Awesome icons
+Returns the HTML tags for a font awesome icon
+
+{% highlight YAML %}
+{% raw %}
+{% icon fa-camera-retro %} =>
+<i class="fa fa-camera-retro"></i>
+
+{% icon fa-camera-retro fa-lg %} =>
+<i class="fa fa-camera-retro fa-lg"></i>
+{% endraw %}
+{% endhighlight %}
+
 _Continue reading with [The post structure](/post_structure)._
