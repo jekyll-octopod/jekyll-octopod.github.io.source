@@ -263,10 +263,10 @@ Returns the HTML tags for a font awesome icon
 {% highlight YAML %}
 {% raw %}
 {% icon fa-camera-retro %} =>
-<i class="fa fa-camera-retro"></i>
+<i class="fas fa-camera-retro"></i>
 
 {% icon fa-camera-retro fa-lg %} =>
-<i class="fa fa-camera-retro fa-lg"></i>
+<i class="fas fa-camera-retro fa-lg"></i>
 {% endraw %}
 {% endhighlight %}
 
