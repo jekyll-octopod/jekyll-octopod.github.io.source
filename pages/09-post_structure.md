@@ -32,6 +32,11 @@ audio:
   mp3: episode0.mp3
   ogg: episode0.ogg
   m4a: episode0.m4a
+### File size is only necessary, if assets are not hosted in the episodes directory.
+filesize:
+   mp3: 123456
+   ogg: 234567
+   m4a: 345678
 chapters:
   - '00:00:00.000 Intro.'
   - '00:00:30.000 ... Shoubidoubidoo ...'
