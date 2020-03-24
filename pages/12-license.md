@@ -9,6 +9,12 @@ permalink: license
 
 jekyll-octopod is licensed under the [MIT-License](LICENSE).
 
+The code is a friendly fork and thereby heavily based on
+[octopod](https://github.com/pattex/octopod) by [@pattex](https://twitter.com/pattex),
+which is also covered by the MIT License.  
+jekyll-octopod would not exist without octopod, it would at least be a completely
+different beast.
+
 The following assets from separate projects are packaged in this repo:
 
 * The cute Octopod Logo is by Thekla "TeMeL" Löhr, http://www.temel-art.de/, CC BY 3.0 Germany License
