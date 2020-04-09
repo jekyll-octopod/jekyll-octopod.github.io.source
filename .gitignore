@@ -4,3 +4,4 @@ _site
 Gemfile
 Gemfile.lock
 README.md
+.jekyll-cache
