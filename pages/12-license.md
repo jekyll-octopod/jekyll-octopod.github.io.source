@@ -22,7 +22,7 @@ The following assets from separate projects are packaged in this repo:
 * Bootflat, version 2.0.4, http://bootflat.github.io/, MIT License
 * Bootstrap, version 3.3.0 http://getbootstrap.com/, MIT License
 * Glyphicons, http://glyphicons.com/, are licensed via Bootstrap
-* Font Awesome, version 4.5.0, http://fontawesome.io/, Font: SIL OFL 1.1, CSS: MIT License
+* Line Awesome, version 1.3.0, https://icons8.com/line-awesome, MIT License
 * iCheck, version 1.0.1, http://git.io/arlzeA, MIT License
 * JQuery, version 1.11.3., https://jquery.com/, MIT License
 * Demo Audio from Bensound, http://www.bensound.com/royalty-free-music, CC BY-ND 3.0 License

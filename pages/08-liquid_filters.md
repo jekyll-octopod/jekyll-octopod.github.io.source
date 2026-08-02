@@ -308,17 +308,17 @@ parameter, it will be skipped.
 {% endraw %}
 {% endhighlight %}
 
-## Font Awesome icons
+## Line Awesome icons
 
-Returns the HTML tags for a font awesome icon
+Returns the HTML tags for a Line Awesome icon
 
 {% highlight YAML %}
 {% raw %}
-{% icon fa-camera-retro %} =>
-<i class="fas fa-camera-retro"></i>
+{% icon la-camera-retro %} =>
+<i class="las la-camera-retro"></i>
 
-{% icon fa-camera-retro fa-lg %} =>
-<i class="fas fa-camera-retro fa-lg"></i>
+{% icon la-camera-retro la-lg %} =>
+<i class="las la-camera-retro la-lg"></i>
 {% endraw %}
 {% endhighlight %}
 

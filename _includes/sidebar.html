@@ -1,11 +1,11 @@
-<div class="page-header">
-  <h3>
+<div class="block">
+  <p class="title is-4">
     {{ site.title }}
-    {% if site.subtitle %}<br/><small>{{ site.subtitle }}</small>{% endif %}
-  </h3>
+  </p>
+  {% if site.subtitle %}<p class="subtitle is-6">{{ site.subtitle }}</p>{% endif %}
 </div>
 
-<p class="text-center">
+<p class="has-text-centered">
   <img width="200px" src="{{ site.url }}/img/logo-360x360.png" alt="{{ site.title }} logo">
 </p>
 
@@ -13,22 +13,21 @@
 
 <hr/>
 
-<h3> Documentation - Topics</h3>
+<p class="title is-5">Documentation - Topics</p>
 
 {{ site | documentation_list:page }}
 
-
-<h3> Source Code </h3>
+<p class="title is-5">Source Code</p>
 
 <ul>
   <li>
     <a href="https://github.com/jekyll-octopod/jekyll-octopod">
-      <i class="fab fa-github"></i> Github
+      <i class="lab la-github"></i> Github
     </a>
   </li>
 </ul>
 
-<h3>Social Media</h3>
+<p class="title is-5">Social Media</p>
 
 For us on Twitter for News!
 <br/>
