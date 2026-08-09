@@ -7,7 +7,7 @@ PATH
 PATH
   remote: ../jekyll-octopod
   specs:
-    jekyll-octopod (0.11.0)
+    jekyll-octopod (0.12.0)
       facets (~> 3.2)
       jekyll (~> 4.4)
       jekyll-admin (~> 0.12)

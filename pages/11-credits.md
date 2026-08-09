@@ -18,7 +18,6 @@ Especially to be mentioned:
 * [The whole Podlove project](http://podlove.org/)
 * [Octopress](http://octopress.org/)
 
-The beautiful Octopod Logo was designed and created by [Thekla "TeMeL" Löhr](http://www.temel-art.de/). Please support her with a little flattr.
-<a href="https://flattr.com/thing/526869/TeMeL-on-Flattr" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+The beautiful Octopod Logo was designed and created by [Thekla Barck](https://www.temel-art.de/wordpress/).
 
 _Continue reading with [License](/license)._

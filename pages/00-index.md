@@ -64,7 +64,6 @@ jekyll-octopod brings innately:
 * a ready to use [Bootflat](http://bootflat.github.io/) and
   [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
-* [Flattr](https://flattr.com/) support on the website and in the episode feed.
 * [Twitter](https://twitter.com) integration on the website.
 * comments via [Disqus](https://disqus.com/) or
 * comments via [Isso](https://posativ.org/isso/).
