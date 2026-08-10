@@ -19,6 +19,9 @@ You can check if you succeeded by entering
 $ ruby -v
 $ gem -v
 {% endhighlight %}
-at the command prompt. Both commands should return version greater or equal 2.0 .
+at the command prompt. Both commands should return a Ruby version greater or equal 3.0 (the theme
+gem [jekyll-bulma](https://github.com/jekyll-octopod/jekyll-bulma) requires at least this). The
+project itself is developed and tested against Ruby 4.0.6, see its
+[`.tool-versions`](https://github.com/jekyll-octopod/jekyll-octopod/blob/master/.tool-versions).
 
 _Continue reading with [Installation](/installation)._

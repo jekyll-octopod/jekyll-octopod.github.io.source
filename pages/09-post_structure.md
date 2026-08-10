@@ -76,6 +76,4 @@ Getting started is hard.
 
 Audio and script tags get filtered out of the body for feed creation, so that they do not disturb in podcatchers rendering the shown notes.
 
-You can create scientific formulas using the full MathJax syntax http://www.mathjax.org/
-
 _Continue reading with [Contributions](/contributions)._

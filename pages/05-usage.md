@@ -85,12 +85,6 @@ The following command generates your site and starts a local webserver for a pre
 your new podcasting website by opening [http://localhost:4000](http://localhost:4000).
 
 {% highlight shell %}
-$ octopod --url "http://localhost:4000" --server
-{% endhighlight %}
-
-Since `localhost:4000` is the default, a shorter command with the same result is:
-
-{% highlight shell %}
 $ octopod s[erve]
 {% endhighlight %}
 

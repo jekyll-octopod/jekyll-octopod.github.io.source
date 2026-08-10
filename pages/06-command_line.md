@@ -55,13 +55,10 @@ For ```octopod episode```, the following options are available to override defau
 
 -e, --explicit [yes/no]
 
---episode-cover [PATH]
-# Path to an episode-specific image
-
 -l, --layout [LAYOUT]
 # Defaults to 'post', should never need to be changed
 
--p, --posts_dir [PATH]
+-p, --posts-dir [PATH]
 # Defaults to '_posts'
 
 -s, --subtitle [TEXT]

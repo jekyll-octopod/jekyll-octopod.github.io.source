@@ -1,7 +1,7 @@
 ---
 title: Demo
 layout: default
-docs: 3
+docs: 4
 permalink: demo
 ---
 
