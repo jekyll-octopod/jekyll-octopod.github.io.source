@@ -49,7 +49,7 @@ GEM
       jekyll (~> 4.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-octopod (0.15.0)
+    jekyll-octopod (0.15.1)
       facets (~> 3.2)
       jekyll (~> 4.4)
       jekyll-admin (~> 0.12)
