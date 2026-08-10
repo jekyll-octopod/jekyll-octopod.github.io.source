@@ -61,8 +61,7 @@ jekyll-octopod brings innately:
   * image on episode level
   * enclosures have proper guids created
   * generator string identifies jekyll-octopod as feed generator
-* a ready to use [Bootflat](http://bootflat.github.io/) and
-  [Twitter Bootstrap](http://twitter.github.com/bootstrap/)-based, responsive
+* a ready to use [Bulma](https://bulma.io/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
 * [Twitter](https://twitter.com) integration on the website.
 * comments via [Disqus](https://disqus.com/) or

@@ -7,77 +7,63 @@ permalink: theming
 
 # Theming
 
-There are two options, how to do theming, we are aware of:
+The theme currently in use is [jekyll-bulma](https://github.com/jekyll-octopod/jekyll-bulma), a
+Gem based theme (a Jekyll feature described in the Jekyll documentation of
+[Gem based themes](https://jekyllrb.com/docs/themes/)) implementing [Bulma](https://bulma.io/), a
+modern, small CSS framework with no JavaScript bloat. Bulma is well documented:
+[Bulma documentation](https://bulma.io/documentation/).
 
-## 1. Overriding in `/_sass/_overrides.scss`
+Bulma 1.x styles its components with CSS custom properties (`--bulma-*`) instead of baking fixed
+colors straight into the compiled CSS, which makes theming considerably simpler than with the old
+Bootflat/Bootstrap-based theme.
 
-You can override any css selectors in `/_sass/_overrides.scss`. As it is a scss file, so you can use
-the features of SCSS to improve readability, but it could still be a pain.
+## Overriding in `/_sass/_overrides.scss`
+
+You can override any of Bulma's `--bulma-*` custom properties (or plain CSS selectors) in your
+site's own `/_sass/_overrides.scss` file. It's loaded last, so anything you put there wins the
+cascade at equal selector specificity.
 
 ### Example
 
-Typically people want to change the colors of the navbar, so there is a commented example of the
-six colors used in the navbar in the
-[overrides file](https://github.com/jekyll-octopod/jekyll-octopod/blob/master/assets/_sass/_overrides.scss).
-Uncomment and set them to the values you prefer.
+To change the navbar's background color, override the custom properties it reads its colors from
+— `--bulma-navbar-background-color` for the flat background, plus `--bulma-navbar-h`/`-s`/`-l` so
+that hover, active and dropdown states (which Bulma derives from that hue/saturation/lightness
+triple, not from the flat color alone) stay consistent with it:
+
+```scss
+.navbar {
+  --bulma-navbar-background-color: rgb(72, 207, 173);
+  --bulma-navbar-h: 166deg;
+  --bulma-navbar-s: 48%;
+  --bulma-navbar-l: 55%;
+}
+```
+
+### Gotcha: specificity beats color modifier classes
+
+If the element you're overriding also carries one of Bulma's own color modifier classes (e.g.
+`<nav class="navbar is-light">`), the compiled `.navbar.is-light { ... }` rule has *higher*
+specificity than a plain `.navbar { ... }` override and wins regardless of where your override
+sits in the file. Either remove the modifier class from the markup, or match its specificity in
+your own selector.
 
 ### Drawbacks
 
-* You need to be able to find the css selectors in the developer tools of your browser
-* Finding of all the css selectors to be overridden can be a lot of work
-* The theme might not be consistent any more, in case you didn't find all the occurencies of e.g.
-  the color you want to change
-* A lot of css: it might be a huge amount of css selectors, that you have to override
+* You still need your browser's developer tools to find the exact `--bulma-*` custom property name
+  for the component you want to change — check the compiled `--bulma-*` declarations on the
+  element, or the component's own partial in the vendored
+  [`_sass/sass/` directory](https://github.com/jekyll-octopod/jekyll-bulma/tree/master/_sass/sass)
+  of jekyll-bulma.
+* Some visual states (hover, active, dropdown shading, ...) are derived from companion `-h`/`-s`/`-l`
+  variables rather than the flat color property alone — overriding just the background color without
+  the matching hue/saturation/lightness can leave those derived states looking inconsistent.
 
+## Overriding Sass variables
 
-## 2. Overriding using the scss variables
-
-In case you know about scss and gem based themes, you can skip the Gereral Principles chapter,
-inline the jekyll-bootflat theme, override the variables and you are done. Otherwise, let's get
-into the details:
-
-### General principles
-
-First explaination of the general principles:
-
-The theme currently in use is [jekyll-bootflat](https://github.com/jekyll-octopod/jekyll-bootflat).
-It is implementing Bootflat which is based on Bootstrap.
-Bootflat is well documented: [Documentation of Bootflat](http://bootflat.github.io/).
-
-Bootstap in included in version 3.3.6., which is also well documented:
-[Documentation of Bootstrap 3.3.6](https://bootstrapdocs.com/v3.3.6/docs/getting-started/)
-
-We using jekyll-bootflat as a Gem based theme, a Jekyll feature described in the Jekyll
-documentation of [Gem based themes](https://jekyllrb.com/docs/themes/). This is the documetation
-you absolutely have to read to be able to adapt jekyll-octopod in the most efficient way possible.
-
-Following the principles in
-[Overriding theme defaults](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)
-or [Converting gem-based themes to regular themes](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes)
-you may want to change the defaults of
-
-* Bootflat in the [Bootflat scss directory](https://github.com/jekyll-octopod/jekyll-bootflat/tree/master/_sass/bootflat)
-* Bootstrap in the [Bootstrap scss directory](https://github.com/jekyll-octopod/jekyll-bootflat/tree/master/_sass/bootstrap)
-
-### Side note
-
-I ran into the trap to believe that you could change variables simply by overriding them
-in `/_sass/_overrides`, but that is not the case. The reason is that for the scss parser of
-Jekyll not the last setting of a scss variable wins, but the last one before resolving it,
-which happens earlier. If that sounds strange, a look at
-[the import order](https://github.com/jekyll-octopod/jekyll-bootflat/blob/master/assets/css/main.scss)
-might clear things up: The variables are already used before they have been overridden :-(
-
-### Example
-
-Now let's change the colors of the navbar as an example. The file containing the colors of the navbar is:
-`https://github.com/jekyll-octopod/jekyll-bootflat/tree/master/_sass/bootflat`
-Whereever you inlined the file in your project, change the variables *there* to your heart's desire:
-
-```
-$navbar-background-color:                    $mint-dark !default;
-$navbar-background-color-active:             $mint-light !default;
-$navbar-font-color:                          $black !default;
-$navbar-item-background-color-hover:         $navbar-background-color-active !default;
-$navbar-inverse-background-color:            $black !default;
-```
+jekyll-bulma's entry point ([`_sass/bulma.scss`](https://github.com/jekyll-octopod/jekyll-bulma/blob/master/_sass/bulma.scss))
+loads its components with `@use`, not `@forward`, so the component-level Sass variables defined
+deep inside (e.g. `$navbar-background-color` in `_sass/sass/components/navbar.scss`) are not
+exposed for configuration via `@use "bulma" with (...)` from your own `main.scss`. In practice,
+overriding the CSS custom properties above (option 1) is the supported way to theme this gem —
+there currently isn't a working Sass-variable-override path the way there was with the old
+`@import`-based Bootflat/Bootstrap theme.

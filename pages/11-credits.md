@@ -14,7 +14,7 @@ Especially to be mentioned:
 
 * Arne Eilermann arne@kleinerdrei.net who started and created Octopod https://github.com/pattex/octopod
 * [Jekyll](http://jekyllrb.com/)
-* [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
+* [Bulma](https://bulma.io/)
 * [The whole Podlove project](http://podlove.org/)
 * [Octopress](http://octopress.org/)
 
