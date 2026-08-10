@@ -13,10 +13,10 @@
   {{ site | episode_feeds_html }}
 
   <link href='/assets/css/ubuntu.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/custom_styles.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/custom_styles.css">
 
-  <script src="{{ site.url }}/assets/js/dropdown.js"></script>
+  <script src="/assets/js/dropdown.js"></script>
   <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ site.url }}">{{ site.title }}</a>
 
@@ -63,23 +63,25 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8">
-        <div class="content">
-          {{ content }}
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+        <div id="sidebar" class="column is-4">
+          <div class="box">
+            {% include sidebar.html %}
+          </div>
         </div>
       </div>
-      <div id="sidebar" class="column is-4">
-        <div class="box">
-          {% include sidebar.html %}
-        </div>
+      <div id="footer" class="has-text-right">
+        <small>Powered by <a href="https://github.com/pattex/octopod">Octopod</a> and <a href="http://jekyllrb.com/">Jekyll</a>.</small>
       </div>
     </div>
-    <div id="footer" class="has-text-right">
-      <small>Powered by <a href="https://github.com/pattex/octopod">Octopod</a> and <a href="http://jekyllrb.com/">Jekyll</a>.</small>
-    </div>
-  </div>
+  </section>
 
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

@@ -1,3 +1,10 @@
+.navbar {
+  --bulma-navbar-background-color: rgb(72, 207, 173);
+  --bulma-navbar-h: 166deg;
+  --bulma-navbar-s: 48%;
+  --bulma-navbar-l: 55%;
+}
+
 // Improve visibility of subtitles and similar text by increasing contrast
 h1 small, h2 small, h3 small {
   color: #77778C;
