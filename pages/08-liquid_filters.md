@@ -179,11 +179,13 @@ audio file in the page's YAML front matter.
 
 ### Web player
 
-Returns the web player for the episode of a given page.
+Renders the [Podlove Web Player](https://podlove.org/podlove-web-player/) for the current page's
+episode, if it has an `audio` front matter key. This is a tag, not a filter — it reads the current
+page directly, no arguments needed.
 
 {% highlight YAML %}
 {% raw %}
-{{ page | podigee_player:site }}
+{% podlove_player %}
 {% endraw %}
 {% endhighlight %}
 

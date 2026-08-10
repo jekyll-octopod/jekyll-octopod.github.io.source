@@ -55,10 +55,10 @@ jekyll-octopod brings innately:
 * [Twitter](https://twitter.com) integration on the website.
 * comments via [Disqus](https://disqus.com/) or
 * comments via [Isso](https://posativ.org/isso/).
-* [Podigee Web Player](https://www.podigee.com/en/podcast-player).
-    * Easy chaptermarks
-    * Fast-forward & rewind 30s
-    * Multiple playback speeds: 0.5x, 1.5x, 2x
+* [Podlove Web Player](https://podlove.org/podlove-web-player/), self-hosted (no external CDN).
+    * Chapter marks
+    * Adjustable playback speed
+    * Download and share links
 * [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy
   podcast subscription on any operating system, including mobile phones.
 * https compatibility

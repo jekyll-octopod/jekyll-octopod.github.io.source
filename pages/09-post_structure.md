@@ -66,7 +66,7 @@ At minimum a short text, the web player (embedded in an iframe) and some links a
 {% highlight YAML %}
 Getting started is hard.
 {% raw %}
-{{ podigee_player page }}
+{% podlove_player %}
 {% endraw %}
 ## Show Notes und Links
 
