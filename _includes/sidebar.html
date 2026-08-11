@@ -29,6 +29,10 @@
 
 <h4 class="title is-4">Social Media</h4>
 
-For us on Twitter for News!
+Follow us on the fediverse for News!
 <br/>
-<a href="https://twitter.com/{{ site.twitter_nick }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter_nick }}</a>
+{% if site.fediverse_url %}
+  <a rel="me" href="{{ site.fediverse_url }}" class="button is-primary is-small">
+    <i class="lab la-mastodon"></i>Follow {{ site.fediverse_url | fediverse_handle }}
+  </a>
+{% endif %}

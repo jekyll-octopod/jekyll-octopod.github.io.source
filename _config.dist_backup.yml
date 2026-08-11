@@ -30,7 +30,7 @@ ssh_port: 22
 document_root: /path/to/your/htdocs/
 rsync_delete: true
 # You can configure this #######################################################
-twitter_nick: jekyll_octopod
+fediverse_url: https://fosstodon.org/@informatom
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY 4.0

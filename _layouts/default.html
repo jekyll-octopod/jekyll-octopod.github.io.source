@@ -41,7 +41,7 @@
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-start">
         <a class="navbar-item" href="{{ site.url }}">Home</a>
-        <a class="navbar-item" href="https://twitter.com/{{ site.twitter_nick }}"><i class="lab la-twitter"></i>&nbsp;@{{ site.twitter_nick }}</a>
+        {% if site.fediverse_url %}<a class="navbar-item" href="{{ site.fediverse_url }}" rel="me"><i class="lab la-mastodon"></i>&nbsp;{{ site.fediverse_url | fediverse_handle }}</a>{% endif %}
         <a class="navbar-item" href="https://github.com/jekyll-octopod/jekyll-octopod/issues"><i class="lab la-github"></i>&nbsp;Github Issues</a>
         <a class="navbar-item" href="https://github.com/jekyll-octopod/jekyll-octopod"><i class="lab la-github"></i>&nbsp;Github Repo</a>
       </div>
@@ -81,9 +81,5 @@
       </div>
     </div>
   </section>
-
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
 </body>
 </html>

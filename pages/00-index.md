@@ -52,7 +52,7 @@ jekyll-octopod brings innately:
   * generator string identifies jekyll-octopod as feed generator
 * a ready to use [Bulma](https://bulma.io/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
-* [Twitter](https://twitter.com) integration on the website.
+* Fediverse (e.g. [Mastodon](https://joinmastodon.org/)) follow link on the website.
 * comments via [Disqus](https://disqus.com/) or
 * comments via [Isso](https://posativ.org/isso/).
 * [Podlove Web Player](https://podlove.org/podlove-web-player/), self-hosted (no external CDN).
