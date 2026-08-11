@@ -7,6 +7,29 @@
   --bulma-navbar-h: 166deg;
   --bulma-navbar-s: 48%;
   --bulma-navbar-l: 55%;
+
+  // Without this, Bulma still colors the *currently active* nav item (a.navbar-item.is-active)
+  // from its own global --bulma-link-h/-s/-l default (a blue unrelated to the values above) instead
+  // of from this navbar's own hue/saturation/lightness - these four properties are what it actually
+  // reads for that state, so they need to be pointed at our own values too.
+  --bulma-navbar-item-selected-h: var(--bulma-navbar-h);
+  --bulma-navbar-item-selected-s: var(--bulma-navbar-s);
+  --bulma-navbar-item-selected-l: var(--bulma-navbar-l);
+  --bulma-navbar-item-selected-background-l: 40%;
+  --bulma-navbar-item-selected-color-l: 97%;
+}
+
+// The resting nav items' text color is Bulma's own --bulma-text-l, which is intentionally light
+// in dark mode (for contrast against the page's now-dark background) - but our navbar's own
+// background above is a literal color, so it doesn't darken with the rest of the page. Without
+// this, dark mode ends up with near-white text on a background that's still light-mode teal,
+// unreadable. Darkening the same hue/saturation here keeps the brand color recognizable while
+// giving Bulma's light dark-mode text something dark enough to actually contrast against.
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    --bulma-navbar-background-color: #1B4B40;
+    --bulma-navbar-l: 20%;
+  }
 }
 
 // Improve visibility of subtitles and similar text by increasing contrast

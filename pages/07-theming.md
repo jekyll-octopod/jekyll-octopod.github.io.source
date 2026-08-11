@@ -28,7 +28,18 @@ cascade at equal selector specificity.
 To change the navbar's background color, override the custom properties it reads its colors from
 — `--bulma-navbar-background-color` for the flat background, plus `--bulma-navbar-h`/`-s`/`-l` so
 that hover, active and dropdown states (which Bulma derives from that hue/saturation/lightness
-triple, not from the flat color alone) stay consistent with it:
+triple, not from the flat color alone) stay consistent with it. Two more things need covering
+alongside it, or the result looks like it's only half-themed:
+
+* the *currently active* nav item (`a.navbar-item.is-active`) doesn't inherit `--bulma-navbar-h`/
+  `-s`/`-l` at all — it reads a separate `--bulma-navbar-item-selected-*` set of properties that
+  default to Bulma's own global link color, unrelated to whatever the navbar itself uses.
+* the background above is a flat, literal color, so it won't react to the visitor's OS/browser dark
+  mode preference the way the rest of the (CSS-custom-property-driven) theme does. Left alone, dark
+  mode still swaps the *text* color of the resting nav items to something light (Bulma's own
+  `--bulma-text-l`, meant for contrast against a dark page) while the navbar's background stays
+  exactly as light as it was — light text on a still-light bar. A `prefers-color-scheme: dark`
+  override with a darker version of the same hue keeps it legible in both.
 
 ```scss
 .navbar {
@@ -36,6 +47,19 @@ triple, not from the flat color alone) stay consistent with it:
   --bulma-navbar-h: 166deg;
   --bulma-navbar-s: 48%;
   --bulma-navbar-l: 55%;
+
+  --bulma-navbar-item-selected-h: var(--bulma-navbar-h);
+  --bulma-navbar-item-selected-s: var(--bulma-navbar-s);
+  --bulma-navbar-item-selected-l: var(--bulma-navbar-l);
+  --bulma-navbar-item-selected-background-l: 40%;
+  --bulma-navbar-item-selected-color-l: 97%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    --bulma-navbar-background-color: #1B4B40;
+    --bulma-navbar-l: 20%;
+  }
 }
 ```
 
