@@ -26,6 +26,14 @@ $ octopod setup
 # Sets up Jekyll site to become podcast-aware, copies assets and default config.
 # Asks for confirmation on file overwrite.
 
+$ octopod update
+# Updates an existing site's template files to the currently installed
+# jekyll-octopod version. Unlike `setup`, it never touches _posts/, imprint.md,
+# index.md or the demo episodes/ files - those are always left alone, since this
+# targets sites that are already live with real content. Also rewrites the
+# retired {% podigee_player %} tag to {% podlove_player %} in any post that
+# still uses it.
+
 $ octopod episode
 # adds a post for a new episode
 
