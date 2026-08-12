@@ -68,7 +68,7 @@ disqus_developer: 0 # 1 | 0
 use_isso: "no" # "no" | "yes"
 
 gems: [jekyll-octopod]
-theme: jekyll-bulma
+theme: jekyll-octopod-bulma
 
 ### Jekyll Admin: uncomment the last two lines of this paragraph to enable Jekyll Admin.
 ### (but you will loose auto regeneration after code changes with a text editor then)

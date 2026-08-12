@@ -7,11 +7,17 @@ permalink: theming
 
 # Theming
 
-The theme currently in use is [jekyll-bulma](https://github.com/jekyll-octopod/jekyll-bulma), a
-Gem based theme (a Jekyll feature described in the Jekyll documentation of
+The theme currently in use is
+[jekyll-octopod-bulma](https://github.com/jekyll-octopod/jekyll-octopod-bulma), a Gem based theme
+(a Jekyll feature described in the Jekyll documentation of
 [Gem based themes](https://jekyllrb.com/docs/themes/)) implementing [Bulma](https://bulma.io/), a
 modern, small CSS framework with no JavaScript bloat. Bulma is well documented:
 [Bulma documentation](https://bulma.io/documentation/).
+
+jekyll-octopod-bulma is a fork of the standalone [jekyll-bulma](https://github.com/jekyll-octopod/jekyll-bulma)
+theme, with octopod's own sidebar layout, post/feed layouts, and vendored assets (the Podlove
+player, the subscribe button, the default logo/favicons) folded in — so it, not jekyll-bulma
+directly, is what ships in your site's `theme:` setting and what everything below applies to.
 
 Bulma 1.x styles its components with CSS custom properties (`--bulma-*`) instead of baking fixed
 colors straight into the compiled CSS, which makes theming considerably simpler than with the old
@@ -76,15 +82,15 @@ your own selector.
 * You still need your browser's developer tools to find the exact `--bulma-*` custom property name
   for the component you want to change — check the compiled `--bulma-*` declarations on the
   element, or the component's own partial in the vendored
-  [`_sass/sass/` directory](https://github.com/jekyll-octopod/jekyll-bulma/tree/master/_sass/sass)
-  of jekyll-bulma.
+  [`_sass/sass/` directory](https://github.com/jekyll-octopod/jekyll-octopod-bulma/tree/master/_sass/sass)
+  of jekyll-octopod-bulma.
 * Some visual states (hover, active, dropdown shading, ...) are derived from companion `-h`/`-s`/`-l`
   variables rather than the flat color property alone — overriding just the background color without
   the matching hue/saturation/lightness can leave those derived states looking inconsistent.
 
 ## Overriding Sass variables
 
-jekyll-bulma's entry point ([`_sass/bulma.scss`](https://github.com/jekyll-octopod/jekyll-bulma/blob/master/_sass/bulma.scss))
+jekyll-octopod-bulma's entry point ([`_sass/bulma.scss`](https://github.com/jekyll-octopod/jekyll-octopod-bulma/blob/master/_sass/bulma.scss))
 loads its components with `@use`, not `@forward`, so the component-level Sass variables defined
 deep inside (e.g. `$navbar-background-color` in `_sass/sass/components/navbar.scss`) are not
 exposed for configuration via `@use "bulma" with (...)` from your own `main.scss`. In practice,

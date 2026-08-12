@@ -23,7 +23,7 @@ explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY 4.0
 
 itunes_url: "https://itunes.apple.com/at/podcast/myname/id#myid#"
-theme: jekyll-bulma
+theme: jekyll-octopod-bulma
 
 ### Jekyll Admin: uncomment the last two lines of this paragraph to enable Jekyll Admin.
 ### (but you will loose auto regeneration after code changes with a text editor then)
