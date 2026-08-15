@@ -219,19 +219,6 @@ Returns the host of a given url
 {% endraw %}
 {% endhighlight %}
 
-### Disqus configuration
-
-Generates the config for disqus integration. If a page object is given, it
-generates the config variables only for this page. Otherwise, it only
-generates the global config variables.
-
-{% highlight YAML %}
-{% raw %}
-{{ site | disqus_config }}
-{{ site | disqus_config:page }}
-{% endraw %}
-{% endhighlight %}
-
 ### SHA1
 
 Returns the hex-encoded hash value of a given string. The optional

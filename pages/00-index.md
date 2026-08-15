@@ -53,7 +53,6 @@ jekyll-octopod brings innately:
 * a ready to use [Bulma](https://bulma.io/)-based, responsive
   (i.e. mobile friendly) layout modifiable to your heart's desire.
 * Fediverse (e.g. [Mastodon](https://joinmastodon.org/)) follow link on the website.
-* comments via [Disqus](https://disqus.com/) or
 * comments via [Isso](https://posativ.org/isso/).
 * [Podlove Web Player](https://podlove.org/podlove-web-player/), self-hosted (no external CDN).
     * Chapter marks
