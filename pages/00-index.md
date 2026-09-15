@@ -58,6 +58,7 @@ jekyll-octopod brings innately:
     * Chapter marks
     * Adjustable playback speed
     * Download and share links
+    * Transcripts, auto-detected from a WebVTT file next to the episode's audio
 * [Podlove Subscribe Button](http://podlove.org/podlove-subscribe-button/) for easy
   podcast subscription on any operating system, including mobile phones.
 * https compatibility

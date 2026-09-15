@@ -41,6 +41,9 @@ chapters:
   - '00:00:00.000 Intro.'
   - '00:00:30.000 ... Shoubidoubidoo ...'
   - '00:02:45.000 Outro.'
+### transcript: only needed if the WebVTT file's name doesn't match the audio file's basename;
+### otherwise it's picked up automatically (episode0.mp3 -> episode0.vtt), see Web player
+transcript: episode0.vtt
 tags:
   - 'a tag'
   - 'another tag'

@@ -189,6 +189,16 @@ page directly, no arguments needed.
 {% endraw %}
 {% endhighlight %}
 
+The player's share tab is always configured with every channel the player itself supports
+(Twitter, Facebook, WhatsApp, LinkedIn, Pinterest, Xing, mail, link) — this isn't configurable per
+site or post.
+
+If a WebVTT transcript file sits next to the episode's audio (same basename, `.vtt` extension —
+e.g. `episode1.mp3` → `episode1.vtt` in the `episodes` directory), it's picked up automatically and
+fed to the player as its transcript, including Auphonic's `<v Speaker>text</v>` voice-tag
+convention for per-cue speaker names. Use the `transcript` front matter key (see
+[Post structure](./post_structure)) if the transcript file doesn't share the audio's basename.
+
 ### String of duration
 
 Gets a number of seconds and returns a human readable duration string of it.
