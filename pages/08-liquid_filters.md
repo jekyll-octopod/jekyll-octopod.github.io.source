@@ -199,6 +199,18 @@ fed to the player as its transcript, including Auphonic's `<v Speaker>text</v>` 
 convention for per-cue speaker names. Use the `transcript` front matter key (see
 [Post structure](./post_structure)) if the transcript file doesn't share the audio's basename.
 
+Each voice tag is shown as the speaker's name above their part of the transcript, with a paragraph
+break at every change of speaker. To show full names and avatars instead, declare `speakers` in
+`_config.yml` (or per post in its front matter, which takes precedence):
+
+{% highlight YAML %}
+speakers:
+  - id: thomas
+    name: Thomas Kahle
+    voice: Thomas                        # matches <v Thomas>, defaults to name
+    avatar: /assets/img/speakers/thomas.jpg
+{% endhighlight %}
+
 ### String of duration
 
 Gets a number of seconds and returns a human readable duration string of it.
@@ -264,6 +276,18 @@ parameter, it will be skipped.
 {% raw %}
 {{ site | episode_feeds }}
 {{ site | episode_feeds:mp3 }}
+{% endraw %}
+{% endhighlight %}
+
+### Episode feed URL
+
+Returns the full URL of an episode feed: `episodes.<episode_file_format>.rss` within the root
+directory, unless `episode_feed_permalinks` in the `_config.yml` sets a different path for that
+format (see [Configuration](./configuration)). The episode feed filters above and below use it, too.
+
+{% highlight YAML %}
+{% raw %}
+{{ site | episode_feed_url:'mp3' }} => https://example.com/episodes.mp3.rss
 {% endraw %}
 {% endhighlight %}
 

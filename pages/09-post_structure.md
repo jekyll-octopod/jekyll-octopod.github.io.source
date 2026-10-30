@@ -44,6 +44,12 @@ chapters:
 ### transcript: only needed if the WebVTT file's name doesn't match the audio file's basename;
 ### otherwise it's picked up automatically (episode0.mp3 -> episode0.vtt), see Web player
 transcript: episode0.vtt
+### speakers: optional, overrides the site-wide speakers from _config.yml for this episode
+speakers:
+  - id: john
+    name: John Doe
+    voice: John
+    avatar: /assets/img/speakers/john.jpg
 tags:
   - 'a tag'
   - 'another tag'
